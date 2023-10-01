@@ -46,3 +46,6 @@ for (let i = 0; i <= blocks.length; i++) {
 
 
 }
+function myFunc() {
+    window.location.href = "https://dredragon-austin.github.io/DredragonCV.com/Project1.html";
+}
