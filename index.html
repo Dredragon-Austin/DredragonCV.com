@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/laptop.css" />
+  <title>Assignment 03</title>
+  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+    href="/css/app-wa-3b8dc075f391c36d9c11006089749481.css?vsn=d" />
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css" />
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div id="banner">
+    <img src="./images/banner.jpg" />
+    <div class="background-transparent"></div>
+    <div class="text-banner">
+      <h1>Nguyễn Hoài Ân</h1>
+      <span>Full Stack Developer</span>
+    </div>
+  </div>
+  <section id="nav-bar">
+    <nav class="containers">
+      <a href="#about" class="active"><i class="fa-solid fa-user" style="color: #3d84ff"></i> Thông tin</a>
+      <a href="#" class="active"><i class="fa-solid fa-file-lines" style="color: #3d84ff"></i> Lý
+        lịch</a>
+      <a href="#"></a>
+      <a href="#" class="active"><i class="fa-solid fa-file-certificate" style="color: #3d84ff"></i>
+        Chứng chỉ</a>
+      <a href="#" class="active"><i class="fa-solid fa-stars fa-lg" style="color: #3d84ff"></i> Dự
+        Án</a>
+    </nav>
+  </section>
+
+  <section id="about" class="expand-lg w-100">
+    <div class="w-100">
+      <div class="row justify-content-md-center">
+        <div id="target" class="col-md bg-grey">
+          <h1 class="section-title ms-5 mt-5 me-5">Mục tiêu nghề nghiệp</h1>
+          <p class="lead fs-6 ms-5 me-5 text-black-50">
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã
+            được trau dồi và không ngừng học hỏi để phát triển bản thân, cũng
+            như hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info" class="col-md pb-5">
+          <div id="Info">
+            <h1 class="section-title mt-5 me-5 ms-5 p-0">
+              Thông tin cá nhân
+            </h1>
+            <ul class="mt-4 ms-5 p-0" class="lead">
+              <li><span>Giới tính</span> : Nam</li>
+              <li><span>Ngày sinh</span> : 23/12/2011</li>
+              <li><span>Điện thoại</span> : (+84) 079733xxxx</li>
+              <li><span>Email</span> : dredragonandaustin@gmail.com</li>
+              <li><span>Địa chỉ</span> : Số 11, đường Huỳnh tấn phát, HCM</li>
+              <li><span>Website</span> : https://DigitalCV.com</li>
+            </ul>
+          </div>
+          <div id="Type">
+            <h1 class="section-title mt-5 me-5 ms-5 p-0">
+              Thông tin cá nhân
+            </h1>
+            <div class="me-5 ms-5 p-0">
+              <input type="email" id="email" class="form-control" placeholder="Enter email" aria-label="Email"
+                aria-describedby="basic-addon1" />
+              <p>Hãy nhập email để xác thực</p>
+              <p id="textdanger" class="text-danger"></p>
+              <input class="btn btn-primary" onclick="CheckEmail()" id="submit" type="submit" value="Submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="job-info">
+    <div
+      class="m-0 mt-5 d-flex flex-md-row flex-lg-column flex-lg-nowrap flex-md-warp flex-sm-warp flex-wrap-reverse w-100"
+      style="width: 100%">
+      <div class="h-100 d-flex flex-lg-row flex-column flex-column justify-content-center ms-5 me-5 blocky">
+        <div class=" col-lg-4 col-md-6 box1 col-12 mb-3 ms-4 mt-4 ">
+          <div class="block border border-1 pt-5 pb-5 ps-4">
+            <h1 class="hoverActive">Kinh nghiệm</h1>
+            <ul class="blocks Hide">
+              <li class="infos">
+                <h2>Xây dựng website với database</h2>
+                <p>19/1/2000 - <i class="now">Hiện tại</i></p>
+                <p>Full Stack Devloper</p>
+                <p>- Xây dựng, phát triển website dựa trên yêu cầu đã có.</p>
+                <p>
+                  - Phân tích và thiết kế Database, sử dụng các hệ quản trị
+                  CSDL( MySQL, SQLSever, NoSQL,...) và viết được các câu truy
+                  vấn.
+                </p>
+                <p>
+                  - Sử dụng ngôn ngữ sever-side(Python,Java,...) để xây dựng
+                  các Web Service.
+                </p>
+              </li>
+              <br />
+              <li class="infos">
+                <h2>Công ty X</h2>
+                <p>09/12/2010 - 10/12/2020</p>
+                <p>Web Designer</p>
+                <p>- Thiết kế website dựa trên yêu cầu của khách hàng.</p>
+                <p>- Sử dụng các công cụ Figma, Canvas, PTS.</p>
+              </li>
+            </ul>
+            <div class="hover Hide hovers border border-3 pt-2 pb-2 pe-4 ps-4 border-warning bg-dark text-light"
+              style="width: fit-content;border-radius: 25px;">
+              <i class="fa-solid fa-arrow-down icon" style="color: #d6d6d6;"></i>
+              <p style="display: inline;" class="icon-text">View more</p>
+            </div>
+          </div>
+        </div>
+        <div class=" col box2 col-lg-4 col-md-6 col-12 mb-3 ms-4 me-4 mt-4">
+          <div class="border block border-1 pt-5 pb-5 ps-4">
+            <h1 class="hoverActive">Học vấn</h1>
+            <div class="blocks Hide">
+              <ul>
+                <li class="content content1">
+                  <div class="infos">
+                    <h2>FUNIX</h2>
+                    <p> 19/1/2000 - 12/5/2009 </p>
+                    <p>Tốt nghiệp chứng chỉ doanh nghiệp Fullstack</p>
+                    <p>GPA: 8 / 10</p>
+                  </div>
+                  <div class="endline1"></div>
+                </li>
+                <li class="content content2">
+                  <div class="infos">
+                    <h2>Lập trình Python cơ bản</h2>
+                    <p>09/12/2020 - 10/12/2021</p>
+                    <p>GPA: 10 / 10</p>
+                  </div>
+                </li>
+                <li class="content content2">
+                  <div class="infos">
+                    <h2>Lập trình c#</h2>
+                    <p> 05/8/2019 - <i class="now">Hiện tại</i></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="hover Hide hovers border border-3 pt-2 pb-2 pe-4 ps-4 border-warning bg-dark text-light"
+              style="width: fit-content;border-radius: 25px;">
+              <i class="fa-solid fa-arrow-down icon" style="color: #d6d6d6;"></i>
+              <p style="display: inline;" class="icon-text">View more</p>
+            </div>
+          </div>
+        </div>
+        <div class=" col box3 col-lg-4 col-md-6 col-12 mb-3 ms-4 me-4 mt-4">
+          <div class="border block border-1 pt-5 pb-5 ps-4">
+            <h1 class="hoverActive">Hoạt động</h1>
+            <div class="blocks Hide">
+              <ul class="section-content third-content">
+                <li class="content content1" style="margin-left: 0%;">
+                  <div class="infos">
+                    <h2>Cuộc thi cuộc thi tin học trẻ</h2>
+                    <p>3/05/2020 - 4/5/2020</p>
+                    <p>Giải 3 bảng B</p>
+                    <p>Thực hành làm c++</p>
+                  </div>
+                  <div class="endline1"></div>
+                </li>
+                <li class="content content2" style="margin-left: 0%;">
+                  <div class="infos">
+                    <h2>Cuộc thi cuộc thi sáng tạo thanh thiếu niên</h2>
+                    <p>06/2023 - 7/2023</p>
+                    <p>Giải khuyến khích bảng B</p>
+                    <p>- Thiết kế website học tập(Nâng tầm tri thức)</p>
+                  </div>
+                  <div class="endline2"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="hover Hide hovers border border-3 pt-2 pb-2 pe-4 ps-4 border-warning bg-dark text-light"
+              style="width: fit-content;border-radius: 25px;">
+              <i class="fa-solid fa-arrow-down icon" style="color: #d6d6d6;"></i>
+              <p style="display: inline;" class="icon-text">View more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" h-100 d-flex flex-lg-row flex-column flex-column justify-content-center ms-5 me-5 blocky">
+        <div class="col box4 col-lg-4 col-md-6 col-12 mb-3 ms-4 mt-4">
+          <div class=" block border border-1 pt-5 pb-5 ps-4">
+            <h1 class="hoverActive">Sở thích</h1>
+            <div class="blocks Hide">
+              <div class="Hobby row">
+                <div class="box col">
+                  <i class="fa-thin fa-chess-clock-flip border border-primary border-2 p-2 rounded-circle"></i>
+                  <h6>Chơi cờ</h6>
+                </div>
+                <div class="box col">
+                  <i class="fa-thin fa-alien-8bit border border-primary border-2 p-2 rounded-circle"></i>
+                  <h6>Làm game</h6>
+                </div>
+                <div class="box col">
+                  <i class="fa-light fa-palette border border-primary border-2 p-2 rounded-circle"></i>
+                  <h6>Đồ hoạ</h6>
+                </div>
+                <div class="box col">
+                  <i class="fa-thin fa-knife-kitchen border border-primary border-2 p-2 rounded-circle"></i>
+                  <h6>Nấu ăn</h6>
+                </div>
+              </div>
+            </div>
+            <div class="hover Hide hovers border border-3 pt-2 pb-2 pe-4 ps-4 border-warning bg-dark text-light"
+              style="width: fit-content;border-radius: 25px;">
+              <i class="fa-solid fa-arrow-down icon" style="color: #d6d6d6;"></i>
+              <p style="display: inline;" class="icon-text">View more</p>
+            </div>
+          </div>
+        </div>
+        <div class=" col box5 col-lg-4 col-md-6 col-12 mb-3 ms-4 me-4 mt-4">
+          <div class="block border border-1 pt-5 pb-5 ps-4">
+            <h1 class="hoverActive">Ngôn ngữ</h1>
+            <div class="blocks Hide">
+              <div>
+                <div class="sub-title">Tiếng anh-Ket 141</div>
+                <i class="score"></i>
+                <i class="score"></i>
+                <i class="un-score"></i>
+              </div>
+              <div>
+                <div class="sub-title">Tiếng Nhật - JLPT N2</div>
+                <i class="score"></i>
+                <i class="un-score"></i>
+                <i class="un-score"></i>
+              </div>
+            </div>
+            <div class="hover Hide hovers border border-3 pt-2 pb-2 pe-4 ps-4 border-warning bg-dark text-light"
+              style="width: fit-content;border-radius: 25px;">
+              <i class="fa-solid fa-arrow-down icon" style="color: #d6d6d6;"></i>
+              <p style="display: inline;" class="icon-text">View more</p>
+            </div>
+          </div>
+        </div>
+        <div class=" col box6 col-lg-4 col-md-6 col-12 mb-3 ms-4 me-4 mt-4">
+          <div class="block border border-1 pt-5 pb-5 ps-4">
+            <h1 class="hoverActive">Kĩ năng</h1>
+            <div class="blocks Hide">
+              <div>
+                <div class="sub-title">HTML/CSS: Fundamental</div>
+                <i class="score"></i>
+                <i class="score"></i>
+                <i class="un-score"></i>
+              </div>
+              <div>
+                <div class="sub-title">Javascript: Imeterdate</div>
+                <i class="score"></i>
+                <i class="score"></i>
+                <i class="un-score"></i>
+              </div>
+              <div>
+                <div class="sub-title">C++: Imeterdate</div>
+                <i class="score"></i>
+                <i class="score"></i>
+                <i class="score"></i>
+              </div>
+              <div>
+                <div class="sub-title">Python: Fundamental</div>
+                <i class="score"></i>
+                <i class="un-score"></i>
+                <i class="un-score"></i>
+              </div>
+              <div>
+                <div class="sub-title">PHP: Fundamental</div>
+                <i class="score"></i>
+                <i class="score"></i>
+                <i class="un-score"></i>
+              </div>
+            </div>
+            <div class="hover Hide hovers border border-3 pt-2 pb-2 pe-4 ps-4 border-warning bg-dark text-light"
+              style="width: fit-content;border-radius: 25px;">
+              <i class="fa-solid fa-arrow-down icon" style="color: #d6d6d6;"></i>
+              <p style="display: inline;" class="icon-text">View more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="certificate" class="bg-grey">
+    <div class="container">
+      <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+      <div class="row">
+        <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-12">
+          <div class="text-dark BOX p-3">
+            <div class="img">
+              <img src="images/Cert_DBI.png" class="img-fluid" alt="">
+            </div>
+            <div>
+              <h3 class="better">CHỨNG CHỈ LẬP TRINH WEB-FUNIX</h3>
+              <h6>Chứng chỉ thuộc chưng trình CDDN</h6>
+              <h6>CGPA: 8.6</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-12">
+          <div class="text-dark BOX1 p-3">
+            <div class="img">
+              <img src="images/Cert_DBI.png" class="img-fluid" alt="">
+            </div>
+            <div>
+              <h3 class="better">CHỨNG CHỈ LẬP TRINH Javascript</h3>
+              <h6>Chứng chỉ thuộc chưng trình CDDN</h6>
+              <h6>CGPA: 9.0</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-12 mt-3 me-0 p-0">
+          <div class="text-dark BOX2 p-3">
+            <div class="img">
+              <img src="images/Cert_DBI.png" class="img-fluid" alt="">
+            </div>
+            <div>
+              <h3 class="better">CHỨNG CHỈ LẬP TRINH C</h3>
+              <h6>Chứng chỉ thuộc chưng trình CDDN</h6>
+              <h6>CGPA: 10.0</h6>
+            </div>
+          </div>
+        </div>
+        <div class="text-dark BOX3 col-6 mt-3 me-0">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project">
+    <div class="container">
+      <h1 class="section-title">Dự án</h1>
+      <div class="row">
+        <div class="col-lg-4 col-12 d-flex flex-column align-items-stretch mt-2">
+          <div class="img border border-2">
+            <img src="images/project_1.png" class="img-fluid" alt="">
+          </div>
+          <div class="name border border-1">
+            <h4> CV - cá nhân</h4>
+          </div>
+          <div class="title border border-1">
+            <div class="p-2">
+              <div class="time border border-primary border-2 rounded-pill bg-primary ps-2 pe-2"
+                style="display: inline-block; vertical-align:top;">2023
+              </div>
+              <div style="  display: inline-block;">
+                <div class="people"><i class="fa-solid fa-user-astronaut" style="color: #274290;"></i> Funix</div>
+                <div class="role"><i class="fa-light fa-gear-code fa-spin" style="color: #7a7a7a;"></i> Developer</div>
+              </div>
+            </div>
+          </div>
+          <div class="des border border-2">
+            <div style="display: inline-block; vertical-align:top;">Mô tả</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                Trang web CV cá nhân online.
+                Bao gồm các thông tin như thông tin cá nhân cũng như kĩ năng nghề nghiệp.
+              </div>
+            </div>
+          </div>
+          <div class="quest border border-2">
+            <div style="display: inline-block; vertical-align:top;">Nhiệm vụ</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                Phát triển code - Xử lý code - Review code - Xử lý lỗi
+              </div>
+            </div>
+          </div>
+          <div class="tech border border-2">
+            <div style="display: inline-block; vertical-align:top;">Công nghệ</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                HTML - CSS - JS - Boostrap 5
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 d-flex flex-column align-items-stretch mt-2">
+          <div class="img border border-2">
+            <img src="images/project_2.png" class="img-fluid" alt="">
+          </div>
+          <div class="name border border-1">
+            <h4>Trang web học tập</h4>
+          </div>
+          <div class="title border border-1">
+            <div class="p-2">
+              <div class="time border border-primary border-2 rounded-pill bg-primary ps-2 pe-2"
+                style="display: inline-block; vertical-align:top;">2022
+              </div>
+              <div style="  display: inline-block;">
+                <div class="people"><i class="fa-solid fa-user-astronaut" style="color: #274290;"></i> School</div>
+                <div class="role"><i class="fa-light fa-gear-code fa-spin" style="color: #7a7a7a;"></i> Developer</div>
+              </div>
+            </div>
+          </div>
+          <div class="des border border-2">
+            <div style="display: inline-block; vertical-align:top;">Mô tả</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                Trang web Học tập online sẽ giúp các bạn học sinh hiểu rõ hơn cũng như ôn lại những bài đã học ở trường
+                thông qua video, hình ảnh, game
+              </div>
+            </div>
+          </div>
+          <div class="quest border border-2">
+            <div style="display: inline-block; vertical-align:top;">Nhiệm vụ</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                Phát triển code - Xử lý code - Review code - Xử lý lỗi
+              </div>
+            </div>
+          </div>
+          <div class="tech border border-2 h-100">
+            <div style="display: inline-block; vertical-align:top;">Công nghệ</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                HTML - CSS - C#
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 d-flex flex-column align-items-stretch mt-2">
+          <div class="img border border-2">
+            <img src="images/project_3.png" class="img-fluid" alt="">
+          </div>
+          <div class="name border border-1">
+            <h4>Website tin tức</h4>
+          </div>
+          <div class="title border border-1">
+            <div class="p-2">
+              <div class="time border border-primary border-2 rounded-pill bg-primary ps-2 pe-2"
+                style="display: inline-block; vertical-align:top;">2019
+              </div>
+              <div style="  display: inline-block;">
+                <div class="people"><i class="fa-solid fa-user-astronaut" style="color: #274290;"></i> School</div>
+                <div class="role"><i class="fa-light fa-gear-code fa-spin" style="color: #7a7a7a;"></i> Developer</div>
+              </div>
+            </div>
+          </div>
+          <div class="des border border-2">
+            <div style="display: inline-block; vertical-align:top;">Mô tả</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                Trang web bao gồm những tin tức hằng ngày, những mục tin nóng tin hot!!!
+              </div>
+            </div>
+          </div>
+          <div class="quest border border-2">
+            <div style="display: inline-block; vertical-align:top;">Nhiệm vụ</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                Phát triển code - Xử lý code
+              </div>
+            </div>
+          </div>
+          <div class="tech border border-2 h-100">
+            <div style="display: inline-block; vertical-align:top;">Công nghệ</div>
+            <div class="w-50 ms-3" style="  display: inline-block;">
+              <div>
+                HTML - CSS - Boostrap - Python - Github - C#
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="footer" class="bg-grey">
+    <div class="container d-flex justify-content-center">
+      <ul>
+        <li class="ms-5 --circle"><i class="fa-brands fa-facebook-f"></i></li>
+        <li class="ms-5 --circle"><i class="fa-brands fa-linkedin-in"></i></li>
+        <li class="ms-5 --circle"><i class="fa-brands fa-github-alt"></i></li>
+      </ul>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
